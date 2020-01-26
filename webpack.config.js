@@ -1,15 +1,25 @@
+require("@babel/polyfill");
+
 const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './src/index.ts',
   module: {
     rules: [
-      { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
+      {
+        test: /\.tsx?$/,
+        loader: "awesome-typescript-loader"
+      },
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+      }
     ]
   },
   resolve: {
-    extensions: [ '.ts', '.js', '.json' ],
+    extensions: ['.ts', '.js', '.json'],
   },
   output: {
     filename: 'bundle.js',
@@ -17,18 +27,19 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-			filename: 'index.html',
-			template: './src/index.html',
-			inject: 'body'
-    })
+      filename: 'index.html',
+      template: './src/index.html',
+      inject: 'body'
+    }),
+    new MiniCssExtractPlugin()
   ],
   devServer: {
-		historyApiFallback: {
-			index: "",
-			verbose: true,
-			disableDotRule: true
+    historyApiFallback: {
+      index: "",
+      verbose: true,
+      disableDotRule: true
     },
-     host: '0.0.0.0',
-     disableHostCheck: true
-	}
+    host: '0.0.0.0',
+    disableHostCheck: true
+  }
 };
