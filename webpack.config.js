@@ -15,11 +15,16 @@ module.exports = {
       {
         test: /\.css$/i,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
+      },
+      {
+        test: /\.html$/,
+        exclude: /node_modules/,
+        loader: "html-loader?exportAsEs6Default"
       }
     ]
   },
   resolve: {
-    extensions: ['.ts', '.js', '.json'],
+    extensions: ['.ts', '.js', '.json', '.html'],
   },
   output: {
     filename: 'bundle.js',

@@ -1,6 +1,6 @@
 {
   "name": "typescript-app",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "typescript-app",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -24,6 +24,7 @@
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.8.3",
+    "html-loader": "^0.5.5",
     "rxjs": "^6.5.4"
   }
 }
