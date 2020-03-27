@@ -1,4 +1,4 @@
-import { loadHomeComponent } from './components/home';
+import { loadHomeComponent } from './components/home/home.component';
 import './css/index.css';
 
-loadHomeComponent();
+loadHomeComponent(true);

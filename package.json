@@ -5,6 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
+    "deploy": "webpack && cp dist/* ../../yend/app/www",
     "dev": "webpack-dev-server --history-api-fallback",
     "lint": "tslint --project ."
   },

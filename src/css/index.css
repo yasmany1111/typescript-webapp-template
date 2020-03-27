@@ -1,4 +1,30 @@
+* {
+  font-size: 18px;
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   background: black;
   color: white;
+}
+
+button.btn {
+  border: none;
+  background-color: #202020;
+  color: lime;
+  padding: 15px;
+  cursor: pointer;
+}
+
+div.container {
+  margin: 5px;
+  margin-bottom: 5px;
 }

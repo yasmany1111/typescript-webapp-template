@@ -44,6 +44,7 @@ module.exports = {
       verbose: true,
       disableDotRule: true
     },
+    port: 9005,
     host: '0.0.0.0',
     disableHostCheck: true
   }
