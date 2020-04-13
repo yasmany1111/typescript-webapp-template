@@ -2,7 +2,8 @@
   font-size: 18px;
   box-sizing: border-box;
 }
-html {
+html,
+body {
   box-sizing: border-box;
 }
 *,
@@ -12,19 +13,14 @@ html {
 }
 
 body {
-  background: black;
-  color: white;
+  background-color: black;
+  color: rgba(120, 200, 255, 0.8);
 }
 
-button.btn {
-  border: none;
-  background-color: #202020;
-  color: lime;
-  padding: 15px;
-  cursor: pointer;
+div.futurepanel {
+  margin-top: 10px;
 }
 
-div.container {
-  margin: 5px;
-  margin-bottom: 5px;
+button.futurebutton {
+  margin-top: 10px;
 }

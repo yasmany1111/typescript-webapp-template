@@ -1,8 +1,47 @@
-<div class="nav-bar container">
-  <button class="btn" id="btnLogout">Logout</button>
-  <button class="btn" id="btnReload">Reload</button>
+<div>
+  <button class="futurebutton" id="btnLogout">Logout</button>
+  <button class="futurebutton" id="btnReload">Reload</button>
 </div>
-<div class="applications container">
-  <button class="btn" id="btnTester">Tester</button>
-  <button class="btn" id="btnYastube">Yastube</button>
+<div class="applications container futurepanel">
+  <button class="futurebutton" id="btnTester">Tester</button>
+  <button class="futurebutton" id="btnYastube">Yastube</button>
+  <button class="futurebutton" id="btnUITest">UI Test</button>
+  <button class="futurebutton" id="btnServerio">Serverio</button>
+</div>
+<br />
+<div class="applications container futurepanel">
+  <div class="futurepanel__header">
+    <h1 class="futurepanel__title">HUB</h1>
+  </div>
+  <button class="futurebutton" onclick="window.open('http://yas.ninja:9000')">VSCode</button>
+  <button class="futurebutton" onclick="window.open('http://yas.ninja:8083')">
+    Portainer
+  </button>
+  <button class="futurebutton" onclick="window.open('http://yas.ninja:83')">
+    Minio
+  </button>
+</div>
+<br />
+<div class="applications container futurepanel">
+  <div class="futurepanel__header">
+    <h1 class="futurepanel__title">Homenet</h1>
+  </div>
+  <button class="futurebutton" onclick="window.open('http://ymain.duckdns.org:83/minio/certs/')">
+    Minio
+  </button>
+  <button class="futurebutton" onclick="window.open('http://ymain.duckdns.org:8096')">
+    Emby
+  </button>
+  <button class="futurebutton" onclick="window.open('http://192.168.1.200:8080/')">
+    Torrent
+  </button>
+</div>
+<br />
+<div class="applications container futurepanel">
+  <div class="futurepanel__header">
+    <h1 class="futurepanel__title">Local</h1>
+  </div>
+  <button class="futurebutton" onclick="window.open('http://localhost:9000/')">
+    Portainer
+  </button>
 </div>

@@ -1,7 +1,10 @@
 import templateString from './home.component.html';
+import './home.component.css';
 import { DomService, YendSDKService } from '../../_core';
 import { loadTesterComponent } from '../tester/tester.component';
 import { loadYastubeComponent } from '../yastube/yastube.component';
+import { loadUITestComponent } from '../ui-test/ui-test.component';
+import { loadServerioComponent } from '../serverio/serverio.component';
 
 export const yendSDKService: YendSDKService = new YendSDKService();
 export const domService: DomService = new DomService();
@@ -34,6 +37,12 @@ const successfulLogin = (eData: any) => {
   });
   domService.onClick('#btnYastube', () => {
     loadYastubeComponent();
+  });
+  domService.onClick('#btnUITest', () => {
+    loadUITestComponent();
+  });
+  domService.onClick('#btnServerio', () => {
+    loadServerioComponent();
   });
 
   // const minioKeys = yendSDKService.authenticatedGet({
